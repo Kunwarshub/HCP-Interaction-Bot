@@ -13,7 +13,7 @@ function App() {
   setLoading(true);
 
   try {
-    const res = await fetch("http://localhost:8000/chat", {
+    const res = await fetch("https://hcp-interaction-bot.onrender.com/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message }),
